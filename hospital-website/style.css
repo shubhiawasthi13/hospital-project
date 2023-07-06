@@ -1,0 +1,505 @@
+:root{
+    --green:rgb(4, 117, 98);
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s ease-out;  
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+     scroll-margin-top: 7rem;
+     scroll-behavior: smooth;    
+}
+.heading{
+    font-size: 3rem;
+    color: var(--black);
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    padding-top: 2rem;
+  }
+  span{
+      color: var(--green);
+      text-transform: uppercase;
+  }
+.header{
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0;left: 0; right: 0;
+    z-index: 1000; 
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #fff;
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--green);
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+.header .navbar a:hover{
+    color: var(--green);
+    font-weight: bold;
+  text-decoration: overline;
+}
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+     background: #eee; 
+    color: var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none; 
+}
+.home{
+  background-color: rgb(245, 240, 240);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 10rem;
+}
+.home .image{
+    flex: 1 1 45rem;
+}
+.home .image img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 45rem;
+    text-align: center;
+}
+.home .content h3{
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-shadow: var(--text-shadow);
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-bottom: 2rem;
+    
+}
+.home .content a{
+    color: var(--green);
+    font-size: 2rem;
+    border: var(--border);
+    padding: .5rem;
+    background: #fff;
+    border-radius: .5rem;
+}
+.home .content a:hover{
+    background-color: var(--green);
+    color: var(--black);
+    cursor: pointer;
+}
+.icons-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding: 5rem;  
+}
+.icons-container .icons{
+   background: #fff; 
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   border-radius: .5rem;
+   text-align: center;
+   padding: 2.5rem;
+
+}
+.icons-container .icons i{
+    font-size: 3rem;
+    color: var(--green);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.icons-container .icons h3{
+    font-size: 2rem;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    margin-bottom: 1rem;
+}
+.icons-container .icons p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+    
+}  
+.services{
+  background-color: rgb(245, 240, 240);
+}
+.services .service-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    padding: 5rem;
+    
+}
+.services .service-box .box{
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2.5rem;
+}
+.services .service-box .box i{
+  color: var(--green);
+  font-size: 5rem;
+  margin-bottom: 1rem;
+
+}
+.services .service-box .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    margin-bottom: 1rem;
+}
+.services .service-box .box p{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    margin-bottom: 2rem;
+    
+}
+.services .service-box .box a{
+    color: var(--green);
+    font-size: 1.7rem;
+    border: var(--border);
+    padding: .5rem;
+    background: #fff;
+    border-radius: .5rem;
+}
+.services .service-box .box a:hover{
+    background-color: var(--green);
+    color: var(--black);
+    cursor: pointer;
+}
+.about{
+    background-color: #fff;
+  
+  }
+  .about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+   
+  }
+  .about .image{
+      flex: 1 1 45rem;
+  }
+  .about .image img{
+      width: 100%;
+  }
+  .about .content{
+      flex: 1 1 45rem;
+      text-align: center;
+  }
+  .about .content h3{
+      font-size: 3rem;
+      color: var(--black);
+      margin-bottom: 1rem;
+      text-shadow: var(--text-shadow);
+  }
+  .about .content p{
+      font-size: 1.5rem;
+      color: var(--light-color);
+      margin-bottom: 2rem;
+      
+  }
+  .about .content a{
+      color: var(--green);
+      font-size: 2rem;
+      border: var(--border);
+      padding: .5rem;
+      background: #fff;
+      border-radius: .5rem;
+  }
+  .about .content a:hover{
+    background-color: var(--green);
+    color: var(--black);
+    cursor: pointer;
+}
+.doctors{
+    background-color: rgb(245, 240, 240);
+    margin-top: 2rem;
+}
+.doctors .row-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding: 5rem;
+}
+.doctors .row-container .row{
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+.doctors .row-container .row .image{
+    text-align: center;
+   
+}
+.doctors .row-container .row .image img{
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+}
+.doctors .row-container .row .content{
+    text-align: center;
+}
+.doctors .row-container .row .content h3{
+    font-size: 1.5rem;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    margin-bottom: .5rem;
+}
+.doctors .row-container .row .content p{
+    font-size: 1rem;
+    color: var(--light-color);
+    margin-bottom: .5rem;
+}
+.doctors .row-container .row .content .icons{
+margin-bottom: 1rem;
+}
+
+.doctors .row-container .row .content .icons i{
+   font-size: 1.7rem;
+   color: var(--green);
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   padding: .5rem;
+}
+.doctors .row-container .row .content .icons i:hover{
+    cursor: pointer;
+ }
+
+ .book{
+    background: #fff;
+ }
+ .book .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+ }
+ .book .container .image{
+    flex: 1 1 45rem;
+ }
+ .book .container .image img{
+    width: 100%;
+ }
+ .book .container .form-box{
+    flex: 1 1 45rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 5rem;
+    margin: 5rem;
+ }
+ 
+ .book .container .form-box form h3{
+  font-size: 2.5rem;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 3rem;
+
+ }
+ .book .container .form-box form input{
+    width: 100%;
+    height: 4rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    margin: 1rem;
+ }
+ .book .container .form-box form button{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+   padding: 1rem;
+   color: var(--green);
+   border-radius: .5rem;
+   border: var(--border);
+   box-shadow: var(--box-shadow);
+   font-size: 2rem;
+ }
+ .book .container .form-box form button:hover{
+    background-color: var(--green);
+    color: var(--black);
+    cursor: pointer;  
+ }
+ .reviews .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+    padding: 5rem;
+ }
+ .reviews .box-container .box{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 2.5rem;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0; 
+ }
+ .reviews .box-container .box img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .5rem solid #fff;
+ }
+ .reviews .box-container .stars i{
+    font-size: 1.5rem;
+    color: #fff;
+ }
+ .reviews .box-container .box .text{
+   color: var(--light-color);
+   line-height: 1.8;
+   font-size: 1.6rem;
+   padding-top: 4rem;
+ }
+ .reviews .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: -4rem; left: 50%;
+    transform: translateX(-50%);
+    background: var(--green);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width: 120%;
+    z-index: -1;
+
+ }
+  .reviews .box-container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+ }
+ .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    padding: 5rem;
+ }
+ .footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+ }
+ .footer .box-container .box  a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+ }
+ .footer .box-container .box  a i{
+    color: var(--green);
+    padding-right: .5rem;
+ }
+ .footer .box-container .box a:hover i{
+    padding-right: 2rem;
+ }
+ .footer .credit{
+    text-align: center;
+    padding: 1rem;
+    color: var(--light-color);
+    font-size: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+#menu-btn{
+   display: initial;
+}
+.header .navbar{
+    position: absolute;
+    top: 115%; right: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    border: var(--border);
+    background: #fff;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: none;
+}
+.header .navbar.active{
+      transform: scale(1);
+      opacity: 1;
+      transition: .2s ease-out;
+}
+.header .navbar a{
+    font-size: 2rem;
+    display: block;
+    margin: 2.5rem;  
+}
+
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+   
+}
